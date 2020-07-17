@@ -1,0 +1,33 @@
+<mat-card class="control-card">
+  <mat-card-header>
+    <mat-card-title>Messages</mat-card-title></mat-card-header>
+  
+    <form class="example-form">
+      
+        <mat-form-field class="example-full-width">
+          <mat-label>Leave a comment</mat-label>
+          <textarea name ="message" [(ngModel)]="message"     matInput placeholder="Message Body."></textarea>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label>Clearable input</mat-label>
+          <input matInput type="text" [(ngModel)]="userName" name="username" palceholder="User Name"> 
+        </mat-form-field>
+      </form>
+
+      <mat-card-actions>
+        <button (click)="post()" mat-button>POST</button>
+      </mat-card-actions>  
+</mat-card>
+<br>
+<mat-card>
+  <mat-label><h2>Messages</h2></mat-label>
+  <mat-list role="list" *ngFor = "let msg of messages">
+    
+    <mat-list-item role="listitem">{{msg.Message}}</mat-list-item>
+  </mat-list>
+</mat-card>
+
+
+
+
+

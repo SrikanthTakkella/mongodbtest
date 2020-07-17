@@ -1,0 +1,23 @@
+<ngb-carousel  routerLink="/all">
+    <ng-template ngbSlide class="carwrap">
+      <div class="picsum-img-wrapper ">
+        <img [src]=image[0]   alt="Random first slide">
+      </div>
+      <div class="carousel-caption">
+        <h3>First slide label</h3>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </div>
+    </ng-template>
+
+    <ng-template ngbSlide>
+        <div class="picsum-img-wrapper" style="width:100%">
+          <img [src]=image[1] alt="Random Second slide">
+        </div>
+        <div class="carousel-caption">
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </ng-template>
+    
+  </ngb-carousel>
+

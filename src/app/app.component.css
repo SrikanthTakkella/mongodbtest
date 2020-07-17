@@ -1,0 +1,15 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+h3 {
+  height:35px;
+  background-color: darkgray; 
+  color:whitesmoke;
+  text-align: center;
+  margin-bottom:0;
+}
+
